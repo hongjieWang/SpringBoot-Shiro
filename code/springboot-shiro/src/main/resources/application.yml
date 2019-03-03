@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloudDB01
+    username: root
+    password: whj
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  type-aliases-package: cn.org.july.spring
+
+
