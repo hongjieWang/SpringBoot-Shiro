@@ -4,7 +4,7 @@
 
 ​	创建SpringBoot项目，集成Shiro组件。打开idea工具。进入File->New->Project选择Spring Initializr 
 
-![image-20190303104116439](images\20190303104116439.png)
+![image-20190303104116439](images/20190303104116439.png)
 
  	包命自己命名。项目创建好后，修改`pom.xml`文件，引入Shiro和Thymeleaf。pom.xml文件如下：
 
@@ -77,7 +77,7 @@
 
 ​		在`resources`目录下新建`templates`文件夹，在templates文件夹中新建test.html文件和user文件夹，在user文件夹中新建add.html和updtae.html.	项目结构如下：
 
-![image-20190303105309038](images\20190303105309038.png)
+![image-20190303105309038](images/20190303105309038.png)
 
 ​	`test.html` 内容如下：
 
@@ -182,7 +182,7 @@ public class UserController {
 
 ​	启动项目，访问`testThymeleaf`页面，在浏览器中输入`http://127.0.0.1:8080/testThymeleaf` ，点击两个连接。效果如下图：
 
-![01](images\01.gif)
+![01](images/01.gif)
 
 
 
@@ -280,7 +280,7 @@ public class ShiroConfig {
 
 ​	配置完成后，启动项目，访问测试页面，点击添加用户连接和修改用户连接。效果如下图。
 
-![02](images\02.gif)
+![02](images/02.gif)
 
 ​	我们可以看到，当我们访问用户添加和用户修改时，会跳转到登录页面。我们配置的Shiro的访问规则如下：
 
@@ -401,7 +401,7 @@ Map<String, String> filterMap = new LinkedHashMap<>();
 
 ​	修改完成后，重启服务。
 
-![03](images\03.gif)
+![03](images/03.gif)
 
 用户认证功能完成。
 
@@ -458,7 +458,7 @@ public class UserRealm extends AuthorizingRealm {
 
 效果如下：
 
-​	![04](images\04.gif)
+​	![04](images/04.gif)
 
 
 
@@ -500,7 +500,7 @@ public class UserRealm extends AuthorizingRealm {
 
 ​	重启服务后访问如下：
 
-![05](images\05.gif)
+![05](images/05.gif)
 
 ### 3、使用shiro标签控制前台显示控件
 
@@ -582,7 +582,7 @@ public class UserRealm extends AuthorizingRealm {
 
 ​	系统重启，访问浏览器，效果如下：
 
-![06](images\06.gif)
+![06](images/06.gif)
 
 
 
